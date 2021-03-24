@@ -15,7 +15,7 @@ const location = useLocation();
       <Navbar.Brand as={Link} to="/"><img src="imgs/memoji.png" alt="memoji icon" width="50" height="50"/> Mike Sasiela</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
+        <Nav className="ml-auto">
           <Nav.Link as={Link} to="/" className= {location.pathname === "/" ? "nav-link active" : "nav-link"}>Home</Nav.Link>
           <Nav.Link as={Link} to="/projects" className={location.pathname === "/projects" ? "nav-link active" : "nav-link"}>Projects</Nav.Link>
           <Nav.Link as={Link} to="/contact" className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>Contacts</Nav.Link>
