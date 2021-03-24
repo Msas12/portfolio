@@ -1,44 +1,27 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { Navbar, Nav,} from 'react-bootstrap'
+
+
 
 function NavTabs() {
   // We'll go into the Hooks API later, for now, we are just using some code
   // from the react-router docs (https://reacttraining.com/react-router/web/api/Hooks/uselocation)
   // This allows the component to check the route any time the user uses a link to navigate.
-  const location = useLocation();
+const location = useLocation();
 
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-          Home
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/about"
-          className={location.pathname === "/about" ? "nav-link active" : "nav-link"}
-        >
-          About
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/blog"
-          className={location.pathname === "/projects" ? "nav-link active" : "nav-link"}
-        >
-          Blog
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/contact"
-          className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}
-        >
-          Contact
-        </Link>
-      </li>
-    </ul>
+    <Navbar bg="dark" expand="lg">
+      <Navbar.Brand as={Link} to="/"><img src="imgs/memoji.png" alt="memoji icon" width="50" height="50"/> Mike Sasiela</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link as={Link} to="/" className= {location.pathname === "/" ? "nav-link active" : "nav-link"}>Home</Nav.Link>
+          <Nav.Link as={Link} to="/projects" className={location.pathname === "/projects" ? "nav-link active" : "nav-link"}>Projects</Nav.Link>
+          <Nav.Link as={Link} to="/contact" className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>Contacts</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
