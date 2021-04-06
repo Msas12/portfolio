@@ -52,7 +52,14 @@ function NavTabs() {
           >
             Contacts
           </Nav.Link>
-          <Nav.Link href="./Michael Sasiela Resume 2021.pdf">Resume</Nav.Link>
+          <Nav.Link
+            href="./Michael Sasiela Resume 2021.pdf"
+            download="Mike Sasiela Resume"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
