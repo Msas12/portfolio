@@ -21,27 +21,33 @@ function NavTabs() {
         <Nav className="ml-auto">
           <Nav.Link
             as={Link}
-            to="/"
+            to="/portfolio/home"
             className={
-              location.pathname === "/" ? "nav-link active" : "nav-link"
+              location.pathname === "/portfolio/home"
+                ? "nav-link active"
+                : "nav-link"
             }
           >
             Home
           </Nav.Link>
           <Nav.Link
             as={Link}
-            to="/projects"
+            to="/portfolio/projects"
             className={
-              location.pathname === "/projects" ? "nav-link active" : "nav-link"
+              location.pathname === "/portfolio/projects"
+                ? "nav-link active"
+                : "nav-link"
             }
           >
             Projects
           </Nav.Link>
           <Nav.Link
             as={Link}
-            to="/contact"
+            to="/portfolio/contact"
             className={
-              location.pathname === "/contact" ? "nav-link active" : "nav-link"
+              location.pathname === "/portfolio/contact"
+                ? "nav-link active"
+                : "nav-link"
             }
           >
             Contacts
