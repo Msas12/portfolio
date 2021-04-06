@@ -50,7 +50,7 @@ function NavTabs() {
                 : "nav-link"
             }
           >
-            Contacts
+            Contact
           </Nav.Link>
           <Nav.Link
             as={Link}

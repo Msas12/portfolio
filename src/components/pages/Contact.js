@@ -1,6 +1,9 @@
 import React from "react";
 import TabContainer from "react-bootstrap/TabContainer";
+import Footer from "../Footer";
 import { Nav, Row, Col, TabContent, TabPane } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   return (
@@ -116,64 +119,17 @@ function Contact() {
                     <p className="card-text">
                       Download My Resume: &nbsp;
                       <a
-                        href="Mike Sasiela Resume 2021.pdf"
+                        href="./Michael Sasiela Resume.pdf"
                         download="Mike Sasiela Resume"
                         target="_blank"
+                        rel="noreferrer"
                       >
-                        <i className="fas fa-file-pdf fa-lg"></i>
+                        <FontAwesomeIcon className="fas" icon={faFilePdf} />
                       </a>
                     </p>
                   </div>
                   {/* Footer */}
-                  <div
-                    className="card-footer mb-3 mx-auto text-center"
-                    style={{ backgroundColor: "#454951" }}
-                  >
-                    <a
-                      className="card-text"
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://www.linkedin.com/in/michael-sasiela-04121992/"
-                    >
-                      <i
-                        className="fab fa-linkedin fa-3x"
-                        style={{ color: "#48b6cd !important" }}
-                      ></i>
-                    </a>
-                    <a
-                      className="card-text"
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://github.com/Msas12"
-                    >
-                      <i
-                        className="fab fa-github-square fa-3x"
-                        style={{ color: "#48b6cd !important" }}
-                      ></i>
-                    </a>
-                    <a
-                      className="card-text"
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://www.instagram.com/msasiela/"
-                    >
-                      <i
-                        className="fab fa-instagram-square fa-3x"
-                        style={{ color: "#48b6cd !important" }}
-                      ></i>
-                    </a>
-                    <a
-                      className="card-text"
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://www.facebook.com/mike.sasiela"
-                    >
-                      <i
-                        className="fab fa-facebook-square fa-3x"
-                        style={{ color: "#48b6cd !important" }}
-                      ></i>
-                    </a>
-                  </div>
+                  <Footer />
                 </div>
               </div>
             </TabPane>
