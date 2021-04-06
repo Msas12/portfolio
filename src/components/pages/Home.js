@@ -49,7 +49,7 @@ function Home() {
                   <h4 className="card-text">
                     Download My Resume: &nbsp;
                     <a
-                      href="./Michael Sasiela Resume 2021.pdf"
+                      href="./Michael Sasiela Resume.pdf"
                       download="Mike Sasiela Resume"
                       target="_blank"
                       rel="noreferrer"

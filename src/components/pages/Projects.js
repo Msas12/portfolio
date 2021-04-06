@@ -11,14 +11,51 @@ const projects = [
     githubLink: "https://github.com/Msas12/Project-2",
     deployedLink: "https://project2msksmh.herokuapp.com/",
   },
+  {
+    id: 2,
+    poster: "./imgs/covid.gif",
+    webmv: "./imgs/covid.webm",
+    mp4: "./imgs/covid.mp4",
+    name: "Project: COVID Is No Joke!",
+    githubLink: "https://github.com/Msas12/COVID-Is-No-Joke-",
+    deployedLink: "https://msas12.github.io/COVID-Is-No-Joke-/#!",
+  },
+  {
+    id: 3,
+    poster: "./imgs/weatherapp.gif",
+    webmv: "./imgs/weatherapp.webm",
+    mp4: "./img/weatherapp.mp4",
+    name: "Weather App",
+    githubLink: "https://github.com/Msas12/Weather-App",
+    deployedLink: "https://msas12.github.io/Weather-App/",
+  },
+  {
+    id: 4,
+    poster: "./imgs/codingquiz.gif",
+    webmv: "./imgs/codingquiz.webm",
+    mp4: "./imgs/codingquiz.mp4",
+    name: "Coding Quiz",
+    githubLink: "https://github.com/Msas12/Coding-Quiz",
+    deployedLink: "https://msas12.github.io/Coding-Quiz/",
+  },
+  {
+    id: 5,
+    poster: "./imgs/Burgers.gif",
+    webmv: "./imgs/Burgers.webm",
+    mp4: "./imgs/Burgers.mp4",
+    name: "Burgers App - Hosted on Heroku",
+    githubLink: "https://github.com/Msas12/Burger-App",
+    deployedLink: "https://sleepy-coast-16684.herokuapp.com/",
+  },
 ];
 
 function Projects() {
   return (
-    <div className="row row-cols-1 row-cols-md-3 g-4 mx-auto mt-5">
-      <div>
+    <div className="container">
+      <div className="row row-cols-md-3 mt-5">
         {projects.map((project) => (
           <Card
+            className="col"
             key={project.id}
             poster={project.poster}
             webmv={project.webmv}

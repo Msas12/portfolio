@@ -53,7 +53,13 @@ function NavTabs() {
             Contacts
           </Nav.Link>
           <Nav.Link
-            href="./Michael Sasiela Resume 2021.pdf"
+            as={Link}
+            to="./Michael Sasiela Resume.pdf"
+            className={
+              location.pathname === "/portfolio/resume"
+                ? "nav-link active"
+                : "nav-link"
+            }
             download="Mike Sasiela Resume"
             target="_blank"
             rel="noreferrer"
