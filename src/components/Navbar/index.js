@@ -9,7 +9,7 @@ function NavTabs() {
 
   return (
     <Navbar bg="dark" expand="lg">
-      <Navbar.Brand as={Link} to="/">
+      <Navbar.Brand as={Link} to="/portfolio/">
         <img src="imgs/memoji.png" alt="memoji icon" width="50" height="50" />{" "}
         Mike Sasiela
       </Navbar.Brand>
@@ -21,9 +21,9 @@ function NavTabs() {
         <Nav className="ml-auto">
           <Nav.Link
             as={Link}
-            to="/portfolio/home"
+            to="/portfolio/"
             className={
-              location.pathname === "/portfolio/home"
+              location.pathname === "/portfolio/"
                 ? "nav-link active"
                 : "nav-link"
             }
