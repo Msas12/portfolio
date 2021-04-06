@@ -76,3 +76,12 @@ body {
 .footer {
   background-color: #48b6cd;
 }
+
+.nav-tabs {
+  background-color: #454951;
+  opacity: 0.8;
+}
+
+.match-color {
+  color: #48b6cd;
+}

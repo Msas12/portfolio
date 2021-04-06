@@ -28,7 +28,7 @@ function NavTabs() {
                 : "nav-link"
             }
           >
-            Home
+            Profile
           </Nav.Link>
           <Nav.Link
             as={Link}

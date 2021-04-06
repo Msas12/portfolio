@@ -52,10 +52,9 @@ const projects = [
 function Projects() {
   return (
     <div className="container">
-      <div className="row row-cols-md-3 mt-5">
+      <div className="row row-cols-md-3 mx-auto mt-5">
         {projects.map((project) => (
           <Card
-            className="col"
             key={project.id}
             poster={project.poster}
             webmv={project.webmv}

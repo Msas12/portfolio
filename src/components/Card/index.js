@@ -1,7 +1,7 @@
 import React from "react";
 
 const Card = (props) => (
-  <div className="col mb-5">
+  <div class="col mb-5">
     <div className="card h-100">
       <video
         className="card-img-top"
