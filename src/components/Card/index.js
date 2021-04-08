@@ -15,8 +15,8 @@ const Card = (props) => (
         <source src={props.mp4} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="card-body">
-        <h5 className="card-title text-center">{props.name}</h5>
+      <div className="card-title">
+        <h5 className="text-center mt-4">{props.name}</h5>
       </div>
       <div className="card-footer text-center">
         <a
