@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
+
 
 function NavTabs() {
   const location = useLocation();
+  const [menuButton, setMenuButton] = useState({
+    icon: faBars
+  });
+
+  const handleClick = () => {
+    if (menuButton.icon === faBars) {
+      return setMenuButton({icon: faTimes})
+    }else {
+      return setMenuButton({icon: faBars})
+    }
+  }
 
   return (
     <Navbar bg="dark" expand="lg">
@@ -16,16 +28,18 @@ function NavTabs() {
 
       {/* Dark Mode Toggle */}
 
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border: "none"}} onClick={() => handleClick()}>
+        <span><FontAwesomeIcon className="fa" icon={menuButton.icon} size="2x" color="#ece3d4"/></span>
+      </Navbar.Toggle>
+      <Navbar.Collapse className="ml-auto" id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Link
             as={Link}
             to="/portfolio/"
             className={
               location.pathname === "/portfolio/"
-                ? "nav-link active"
-                : "nav-link"
+                ? "nav-link active mx-auto"
+                : "nav-link mx-auto"
             }
           >
             Profile
@@ -35,8 +49,8 @@ function NavTabs() {
             to="/portfolio/projects"
             className={
               location.pathname === "/portfolio/projects"
-                ? "nav-link active"
-                : "nav-link"
+                ? "nav-link active mx-auto"
+                : "nav-link mx-auto"
             }
           >
             Projects
@@ -46,8 +60,8 @@ function NavTabs() {
             to="/portfolio/contact"
             className={
               location.pathname === "/portfolio/contact"
-                ? "nav-link active"
-                : "nav-link"
+                ? "nav-link active mx-auto"
+                : "nav-link mx-auto"
             }
           >
             Contact
@@ -57,8 +71,8 @@ function NavTabs() {
             to="./Michael Sasiela Resume.pdf"
             className={
               location.pathname === "/portfolio/resume"
-                ? "nav-link active"
-                : "nav-link"
+                ? "nav-link active mx-auto"
+                : "nav-link mx-auto"
             }
             download="Mike Sasiela Resume"
             target="_blank"
