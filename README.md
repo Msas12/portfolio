@@ -5,9 +5,14 @@
 ## Table of Contents
 
 - [Description](#description)
+- [Mock Up](#mock-up)
 - [Deployed App](#deployed-app)
 - [License](#license)
 - [Questions](#questions)
+
+## Mock-Up
+
+![Photo](./imgs/screencap.jpg)
 
 ## Description
 
