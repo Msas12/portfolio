@@ -6,6 +6,23 @@
   -moz-appearance: none;
 }
 
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
+.mainContainer {
+  padding-bottom: 100px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #48b6cd;
+}
+
 html,
 body {
   background: url(https://wallpapercave.com/wp/wp5204110.jpg) no-repeat center

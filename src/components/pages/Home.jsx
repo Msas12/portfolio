@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import Footer from "../Footer";
+import CardFooter from "../CardFooter";
 
 function Home() {
   return (
@@ -54,7 +54,7 @@ function Home() {
                   </h4>
                 </div>
 
-                <Footer />
+                <CardFooter />
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ import {
   faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
-const Footer = () => (
+const CardFooter = () => (
   <div className="container footer text-center">
     <a
       target="_blank"
@@ -36,4 +36,4 @@ const Footer = () => (
   </div>
 );
 
-export default Footer;
+export default CardFooter;

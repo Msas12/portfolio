@@ -1,6 +1,6 @@
 import React from "react";
 import TabContainer from "react-bootstrap/TabContainer";
-import Footer from "../Footer";
+import CardFooter from "../CardFooter";
 import { Nav, Row, Col, TabContent, TabPane } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
@@ -129,7 +129,7 @@ function Contact() {
                     </p>
                   </div>
                   {/* Footer */}
-                  <Footer />
+                  <CardFooter />
                 </div>
               </div>
             </TabPane>
