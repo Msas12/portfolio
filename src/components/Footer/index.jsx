@@ -14,17 +14,17 @@ import {
 const Footer = () => (
   <footer className="mainFooter text-center">
     <div className="row">
-      <div className="col">
+      <div className="col-sm mt-2">
         <p style={{ color: "#454951" }}>Created By: Mike Saseiela</p>
+      </div>
+
+      <div className="col-sm">
         <a href="mailto:mdsasiela@gmail.com">
           <FontAwesomeIcon className="p-1 fab fa-3x" icon={faEnvelopeSquare} />
         </a>
         <a href="tel:+16186238782">
           <FontAwesomeIcon className="p-1 fab fa-3x" icon={faPhoneSquareAlt} />
         </a>
-      </div>
-      <div className="col">
-        <p style={{ color: "#454951" }}>Conect</p>
         <a
           target="_blank"
           rel="noreferrer"
