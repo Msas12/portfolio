@@ -12,7 +12,7 @@
 
 ## Mock-Up
 
-![Photo](./imgs/screencap.jpg)
+![Photo](imgs/screencap.jpg)
 
 ## Description
 
