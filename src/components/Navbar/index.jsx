@@ -1,23 +1,22 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 
 function NavTabs() {
   const location = useLocation();
   const [menuButton, setMenuButton] = useState({
-    icon: faBars
+    icon: faBars,
   });
 
   const handleClick = () => {
     if (menuButton.icon === faBars) {
-      return setMenuButton({icon: faTimes})
-    }else {
-      return setMenuButton({icon: faBars})
+      return setMenuButton({ icon: faTimes });
+    } else {
+      return setMenuButton({ icon: faBars });
     }
-  }
+  };
 
   return (
     <Navbar bg="dark" expand="lg">
@@ -28,8 +27,19 @@ function NavTabs() {
 
       {/* Dark Mode Toggle */}
 
-      <Navbar.Toggle aria-controls="basic-navbar-nav" style={{border: "none"}} onClick={() => handleClick()}>
-        <span><FontAwesomeIcon className="fa" icon={menuButton.icon} size="2x" color="#ece3d4"/></span>
+      <Navbar.Toggle
+        aria-controls="basic-navbar-nav"
+        style={{ border: "none" }}
+        onClick={() => handleClick()}
+      >
+        <span>
+          <FontAwesomeIcon
+            className="fa"
+            icon={menuButton.icon}
+            size="2x"
+            color="#ece3d4"
+          />
+        </span>
       </Navbar.Toggle>
       <Navbar.Collapse className="ml-auto" id="basic-navbar-nav">
         <Nav className="ml-auto">
