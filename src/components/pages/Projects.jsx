@@ -3,15 +3,6 @@ import Card from "../Card";
 
 const projects = [
   {
-    id: 1,
-    poster: "./imgs/DOGS!.gif",
-    webmv: "./imgs/dogs.webm",
-    mp4: "./imgs/dogs.mp4",
-    name: "Adopt Don't Shop - Hosted on Heroku",
-    githubLink: "https://github.com/Msas12/Project-2",
-    deployedLink: "https://project2msksmh.herokuapp.com/",
-  },
-  {
     id: 2,
     poster: "./imgs/covid.gif",
     webmv: "./imgs/covid.webm",
@@ -46,6 +37,15 @@ const projects = [
     name: "Burgers App - Hosted on Heroku",
     githubLink: "https://github.com/Msas12/Burger-App",
     deployedLink: "https://sleepy-coast-16684.herokuapp.com/",
+  },
+  {
+    id: 1,
+    poster: "./imgs/DOGS!.gif",
+    webmv: "./imgs/dogs.webm",
+    mp4: "./imgs/dogs.mp4",
+    name: "Adopt Don't Shop - Hosted on Heroku",
+    githubLink: "https://github.com/Msas12/Project-2",
+    deployedLink: "https://project2msksmh.herokuapp.com/",
   },
 ];
 
