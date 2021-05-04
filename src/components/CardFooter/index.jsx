@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const CardFooter = () => (
-  <div className="container footer text-center">
+  <div className="container footer w-100 text-center">
     <a
       target="_blank"
       rel="noreferrer"

@@ -30,15 +30,15 @@ function Home() {
                     level.
                   </p>
                   <p className="card-text">
-                    I am currently enrolled in a Coding Bootcamp at Washington
-                    University in St. Louis - McKelvey School of Engineering.
+                    I recently graduated and earned a Full Stack Developer
+                    Certificate from Washington University in St. Louis McKelvey
+                    School of Engineering.
                   </p>
                   <p className="card-text">
-                    Upon graduation of this 24 week intensive Bootcamp, I will
-                    earn a Certificate of completion with competencies in:
-                    HTML5, CSS3, JavaScript, jQuery, Express.js, React.js,
-                    Node.js, Progressive Web Apps, Database Theory, MongoDB,
-                    MySQL, Git, Python, Java, C#, PHP and more.
+                    I now have competencies in: HTML5, CSS3, JavaScript, jQuery,
+                    Express.js, React.js, Node.js, Progressive Web Apps,
+                    Database Theory, MongoDB, MySQL, Git, Python, Java, C#, PHP
+                    and more.
                   </p>
 
                   <h4 className="card-text">

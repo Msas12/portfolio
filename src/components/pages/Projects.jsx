@@ -3,6 +3,15 @@ import Card from "../Card";
 
 const projects = [
   {
+    id: 1,
+    poster: "./imgs/BrewCrew.gif",
+    webmv: "./imgs/BrewCrew.webm",
+    mp4: "./imgs/BrewCrew.mp4",
+    name: "Brew Crew - A Brewery Locator App",
+    githubLink: "https://github.com/Msas12/brew-crew",
+    deployedLink: "https://brew-crew-kamms.herokuapp.com/",
+  },
+  {
     id: 2,
     poster: "./imgs/covid.gif",
     webmv: "./imgs/covid.webm",
@@ -39,7 +48,7 @@ const projects = [
     deployedLink: "https://sleepy-coast-16684.herokuapp.com/",
   },
   {
-    id: 1,
+    id: 6,
     poster: "./imgs/DOGS!.gif",
     webmv: "./imgs/dogs.webm",
     mp4: "./imgs/dogs.mp4",
