@@ -35,7 +35,8 @@ function Home() {
                     School of Engineering.
                   </p>
                   <p className="card-text">
-                    I now have competencies in: HTML5, CSS3, JavaScript, jQuery,
+                    After completing this 24 week inensive course I now have
+                    competencies in: HTML5, CSS3, JavaScript, jQuery,
                     Express.js, React.js, Node.js, Progressive Web Apps,
                     Database Theory, MongoDB, MySQL, Git, Python, Java, C#, PHP
                     and more.
